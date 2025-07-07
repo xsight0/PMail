@@ -147,6 +147,33 @@ SMTP端口： 25/465(SSL)
 
 [go to wiki](https://github.com/Jinnrry/PMail/wiki/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E8%AF%B4%E6%98%8E)
 
-# 致谢
+# 配置文件例子
+/root/config
+{
+	"logLevel": "",
+	"domain": "1432234.com",
+	"domains": [
+		"1432234.com"
+	],
+	"webDomain": "mail.1432234.com",
+	"dkimPrivateKeyPath": "config/dkim/dkim.priv",
+	"sslType": "0",
+	"SSLPrivateKeyPath": "config/ssl/private.key",
+	"SSLPublicKeyPath": "config/ssl/public.crt",
+	"dbDSN": "pmail:mimapmail@tcp(172.18.0.2:3306)/pmail?parseTime=True&loc=Local",
+	"dbType": "mysql",
+	"httpsEnabled": 0,
+	"spamFilterLevel": 0,
+	"httpPort": 80,
+	"httpsPort": 443,
+	"weChatPushAppId": "",
+	"weChatPushSecret": "",
+	"weChatPushTemplateId": "",
+	"weChatPushUserId": "",
+	"tgBotToken": "",
+	"tgChatId": "",
+	"isInit": true,
+	"webPushUrl": "",
+	"webPushToken": ""
+}
 
-感谢 [Jetbrains](http://jetbrains.com/) 为本项目免费提供开发工具。
